@@ -1,0 +1,53 @@
+1. Start Program
+2. Print "Welcome to the Vacation Attire Selector!"
+3. Print "We will help you choose the perfect outfit for your vacation."
+4. Print "Please answer the following questions to get your recommendation."
+
+5. Ask user for their vacation destination
+   - Store input in variable `destination`
+
+6. Ask user for their favorite color
+   - Store input in variable `color`
+
+7. Ask user for the season of their vacation
+   - Options: Spring, Summer, Fall, Winter
+   - Store input in variable `season`
+
+8. Print "Thank you for providing the information. Based on your inputs, we will recommend an outfit."
+
+9. **Recommendation Logic**:
+   - If `season` is "Spring":
+     - If `destination` is "Beach":
+       - Print "Recommended Outfit: Light jacket, T-shirt, shorts, and sunglasses."
+     - Else if `destination` is "Mountain":
+       - Print "Recommended Outfit: Light sweater, hiking pants, and comfortable shoes."
+     - Else:
+       - Print "Recommended Outfit: Casual spring attire with a light jacket."
+
+   - Else if `season` is "Summer":
+     - If `destination` is "Beach":
+       - Print "Recommended Outfit: Swimsuit, beachwear, and a hat."
+     - Else if `destination` is "Mountain":
+       - Print "Recommended Outfit: Lightweight and breathable clothing, hiking boots."
+     - Else:
+       - Print "Recommended Outfit: Light and cool summer clothing suitable for the weather."
+
+   - Else if `season` is "Fall":
+     - If `destination` is "Beach":
+       - Print "Recommended Outfit: Long sleeve shirt, light sweater, and jeans."
+     - Else if `destination` is "Mountain":
+       - Print "Recommended Outfit: Warm layers, insulated jacket, and sturdy boots."
+     - Else:
+       - Print "Recommended Outfit: Fall attire, layering options, and comfortable shoes."
+
+   - Else if `season` is "Winter":
+     - If `destination` is "Beach":
+       - Print "Recommended Outfit: Light jacket, warm layers for evening, and comfortable shoes."
+     - Else if `destination` is "Mountain":
+       - Print "Recommended Outfit: Heavy winter coat, thermal wear, and snow boots."
+     - Else:
+       - Print "Recommended Outfit: Warm winter clothing suitable for the climate."
+
+10. Print "Thank you for using the Vacation Attire Selector. Have a great trip!"
+
+11. End Program

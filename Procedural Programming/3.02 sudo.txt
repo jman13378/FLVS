@@ -1,0 +1,50 @@
+Start of the Game
+	PRINT "Welcome to the Adventure Game!"
+	PRINT "Your goal is to collect three items before completing the level."
+Initialize Game Variables
+
+SET score TO 0
+SET items_collected TO 0
+Game Loop (Play Again Option)
+
+REPEAT
+PRINT "Do you want to start collecting items? (yes/no)"
+GET user_input
+CONVERT user_input TO lowercase
+Check User Input to Start Game
+
+IF user_input IS NOT "yes"
+PRINT "Thank you for playing! Goodbye."
+BREAK
+Item Collection Loop
+
+WHILE items_collected < 3
+PRINT "You find an item. Do you want to collect it? (yes/no)"
+GET user input
+CONVERT user_input TO lowercase
+IF user_input IS "yes"
+INCREMENT items_collected BY 1
+INCREMENT score BY 1
+PRINT "You collected an item! Current score: " + str(score)
+ELSE
+
+	PRINT "You chose not to collect the item."
+End of Level
+
+PRINT "Congratulations! You collected all three items."
+PRINT "Your final score is: " + str(score)
+Ask to Play Again
+
+PRINT "Do you want to play again? (yes/no)"
+GET play_again_input
+CONVERT play_again_input TO lowercase
+Check User Input for Replay
+
+IF play_again_input IS "yes"
+CONTINUE
+ELSE
+PRINT "Thank you for playing! Goodbye."
+BREAK
+End of Program
+
+END
