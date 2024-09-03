@@ -1,4 +1,7 @@
-for index in range(4):
-    print(index)
-for index in range(0, 4):
-    print(index)
+from random import randrange
+while True:
+    num = randrange(0,16)
+    if (num==15):
+        print("Number" + str(15))
+    else:
+        print(num)

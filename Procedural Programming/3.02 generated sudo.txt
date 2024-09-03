@@ -41,10 +41,10 @@ CONVERT play_again_input TO lowercase
 Check User Input for Replay
 
 IF play_again_input IS "yes"
-CONTINUE
+	CONTINUE
 ELSE
 PRINT "Thank you for playing! Goodbye."
 BREAK
 End of Program
 
-END
+	END
