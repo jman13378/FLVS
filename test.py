@@ -1,7 +1,11 @@
 from random import randrange
+items = [
+    {"name": "rusty sword"},  # add other options
+    {"name": "stone"},
+    {"name": "wood"},
+    {"name": "leaf"},
+    {"name": "iron"},
+]
 while True:
-    num = randrange(0,16)
-    if (num==15):
-        print("Number" + str(15))
-    else:
-        print(num)
+    itemToFind = items[randrange(len(items))]
+    print(itemToFind)

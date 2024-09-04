@@ -74,7 +74,7 @@ def collectItems():
         print("Searching...")
         # tell teh program to sleep whle it searches for an item
         time.sleep(randrange(minSearchTime,maxSearchTime+1))
-        itemToFind = items[randrange(5)]
+        itemToFind = items[randrange(len(items))]
         # ask the user if they want the item
         userInput = input(
             "You have found 1x "
