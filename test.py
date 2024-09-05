@@ -1,11 +1,5 @@
-from random import randrange
-items = [
-    {"name": "rusty sword"},  # add other options
-    {"name": "stone"},
-    {"name": "wood"},
-    {"name": "leaf"},
-    {"name": "iron"},
-]
-while True:
-    itemToFind = items[randrange(len(items))]
-    print(itemToFind)
+import csv
+with open("text.csv") as csvfile:
+   text = csv.reader(csvfile, delimiter= ",")
+   for line in text:
+      print(len(line))

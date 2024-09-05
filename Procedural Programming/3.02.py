@@ -3,6 +3,8 @@ import time
 import builtins
 
 
+
+
 print ("Type quit at any time to quit the program!")
 #3 initialize the items that can be colleted
 items = [
