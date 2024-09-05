@@ -1,6 +1,10 @@
 import csv
+import builtins
 debug =True
 file_name = "sun_data.csv"
+def input(prompt:object="",default):
+    input = builtins.input(prompt)
+    if (input.lower().strip()== "quit")
 def find_sunrise_time(search_time):
     found = False
     global file_name
