@@ -1,0 +1,63 @@
+Print a description of the event.
+css
+Copy code
+Print "Welcome to the Sunrise Beach 5K Race Scheduler!"
+Print "We are planning a charity 5K race and need to find the perfect weekend date with a sunrise at 6:45 a.m. to enjoy the view."
+Load Data:
+
+Import the CSV file and read its contents.
+sql
+Copy code
+Import the CSV module
+Open "sun_data.csv" for reading
+Read the CSV file into a list of rows
+Close the file
+Ask for User Input:
+
+Prompt the user to enter a date or sunrise time they want to search for.
+python
+Copy code
+Print "Please enter the sunrise time you are looking for (e.g., 06:45):"
+sunrise_time = str(input("Enter sunrise time: "))
+Search for the Time Using Linear Search:
+
+Initialize a flag to check if the time is found.
+mathematica
+Copy code
+Initialize found = False
+For each row in the list of data:
+Extract the sunrise time from the current row.
+If the sunrise time matches the user input:
+Set found to True
+Print a message indicating that the time was found and provide the associated date.
+Break the loop (since we found the time).
+Continue the loop if the time is not found.
+Provide Output Based on Search Results:
+
+After the loop, check the found flag:
+If found is True:
+css
+Copy code
+Print "Sunrise time found! The race can be scheduled for this time."
+If found is False:
+css
+Copy code
+Print "Sunrise time not found in the dataset. Please choose another time."
+Ask for Additional User Input:
+
+If the sunrise time was found, ask the user if they want to schedule the race for that time.
+mathematica
+Copy code
+If found is True:
+    Print "Would you like to schedule the race for this time? (yes/no)"
+    schedule_choice = str(input("Enter your choice: "))
+    If schedule_choice == "yes":
+        Print "Race scheduled for sunrise time."
+    Else:
+        Print "Race not scheduled. Please choose another time."
+End of Program:
+
+Print a closing message.
+mathematica
+Copy code
+Print "Thank you for using the Sunrise Beach 5K Race Scheduler. Have a great day!"
