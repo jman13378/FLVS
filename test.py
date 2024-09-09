@@ -1,5 +1,6 @@
-import csv
-with open("text.csv") as csvfile:
-   text = csv.reader(csvfile, delimiter= ",")
-   for line in text:
-      print(len(line))
+def main():
+   x = "string"
+   x[0] = x[0].upper()
+   print(x)
+
+main()
