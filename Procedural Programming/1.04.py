@@ -6,9 +6,10 @@ import datetime
 
 
 
-ran = False
+hasRan = False
 
 def main():
+    global hasRan
     # if the age is not a number print and rerun the function
     try:
         # get the users age
@@ -21,7 +22,7 @@ def main():
         # tell the user that that fact is nice
         print("Thats a nice Fact")
         # tell the program that the program successfully got all its info
-        ran=True
+        hasRan=True
         # tell the users their current age and how many years till they can vote
         print("You are currently " + str(age) + " Years old! You can register to vote in " + str((18-age)) +" Years!")
     # error out if inputted age is not a number
@@ -29,5 +30,5 @@ def main():
         print("Invalid value entered.")
         return
 
-while (not ran):
+while (not hasRan):
     main()
