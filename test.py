@@ -1,6 +1,6 @@
 def main():
-   x = "string"
-   x[0] = x[0].upper()
-   print(x)
+
+  myNumbers = [3,33,5,2.2,8]
+  print(min(myNumbers))
 
 main()
