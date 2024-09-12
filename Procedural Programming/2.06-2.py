@@ -125,7 +125,7 @@ def main():
                     return
             # if the destination downs exist in the database reccomend the other option
             if (other != ""):
-                print ("\nRecommended Option: " + other)
+                print ("\nRecommended Option: " + other.replace("[color]", color))
             elif (other ==""):
                 # tell the user their outfit isnt in teh database
                 print("Sorry we cannot recommend an option for you at this time :(")
