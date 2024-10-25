@@ -7,7 +7,7 @@ def main():
     global animals
     print("Hi im your new virtural friend! You can call me Juice.")
     name = input("What is your name?: ")
-    if (len(name)<=1):
+    if (len(name)<=1):  
         print("Thats Cool")
     else:
         print("Thats Cool, The second letter of your name is " + name[2])

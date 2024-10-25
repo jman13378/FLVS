@@ -1,20 +1,11 @@
 # Jonathan Meyer
-# 9/30/24
-# Write an interactive program to calculate the volume and surface area of a three-dimensional object.
-import builtins
+# 10/7/24
+# An interactive program to calculate the volume and surface area of a three-dimensional object.
+import math
 # initialize constant variables
-PI = 3.14
-def input(prompt:str="",default=""):
-    input = builtins.input(prompt).strip().lower()
-    # if the input equals quit quit the program
-    if (input == "quit"):
-        print("Thank you for your time! Goodbye :)")
-        quit()
-    # if input is blank return the default value
-    if (input==""):
-        return default
-    return input
+
 def main():
+    # print the problem description
     print("You are designing a cylindrical water tank.")
     print("Calculate the volume and surface area of the tank.")
     print("Type quit to quit the program.")
@@ -23,8 +14,8 @@ def main():
     height = float(input("Enter the height of the cylinder (in meters): ").replace("m",""))
 
     # Calculations
-    volume = PI * radius**2 * height
-    surface_area = 2 * PI * radius**2 + 2 * PI * radius * height
+    volume = math.pi * radius**2 * height
+    surface_area = 2 * math.pi * radius**2 + 2 * math.pi * radius * height
 
     # Output results
     print(f"The volume of the cylinder is: {volume:.2f} cubic meters.")
