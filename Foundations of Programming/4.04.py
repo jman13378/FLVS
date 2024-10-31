@@ -1,4 +1,6 @@
-
+#Jonathan Meyer
+#10/30/24
+# A program to ask the user for their favorite item in a given category
 def main():
     # Step 1: Define the category and list of favorite books
     category = "Favorite Books"
@@ -7,16 +9,16 @@ def main():
     
     user_favorite = input("What is your favorite book? ")
     # Step 3: Output the list of favorite books
-    print(f"Category: {category}")
+    print("Category: "+category)
     print("Here are my favorite books:")
     for index, book in enumerate(favorite_books, start=1):
-        print(f"{index}. {book}")
+        print(index+". "+ book)
 
 
 
     # Step 4: Check if the user's favorite is on the list
     if user_favorite in favorite_books:
-        print(f"Great choice! {user_favorite} is also on my list.")
+        print("Great choice! "+user_favorite+" is also on my list.")
     else:
-        print(f"Nice choice, but '{user_favorite}' is not on my list.")
+        print("Nice choice, but '"+user_favorite+"' is not on my list.")
 main()
