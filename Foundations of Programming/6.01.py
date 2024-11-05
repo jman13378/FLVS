@@ -1,3 +1,6 @@
+# Jonathan Meyer
+# 11.2.2024
+#  a program that converts or calculates values.
 def convert_inches_to_centimeters(inches):
     return inches * 2.54
 
